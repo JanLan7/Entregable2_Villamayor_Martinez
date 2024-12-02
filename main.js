@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let cita = citaFilosofica();
         document.getElementById("cita").innerText = cita;
         document.getElementById("mongex").classList.remove("d-none");
-        reproducirAudio("meditaZao.mp3");
+        reproducirAudio("../audio/meditaZAO.mp3");
         guardarFrase(cita);
     });
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let librosSe = librosSeleccion();
         document.getElementById("librosSe").innerText = librosSe;
         document.getElementById("librox").classList.remove("d-none");
-        reproducirAudio("Page.mp3");
+        reproducirAudio("../audio/Page.mp3");
         guardarFrase(librosSe);
     });
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let chistesS = chistesSeleccion();
         document.getElementById("Ch").innerText = chistesS;
         document.getElementById("chistex").classList.remove("d-none");
-        reproducirAudio("chistedrum.mp3");
+        reproducirAudio("../audio/chistedrum.mp3");
         guardarFrase(chistesS);
     });
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let discosS = discosSeleccion();
         document.getElementById("discosS").innerText = discosS;
         document.getElementById("discox").classList.remove("d-none");
-        reproducirAudio("vinyl.mp3");
+        reproducirAudio("../audio/vinyl.mp3");
         guardarFrase(discosS);
     });
 
