@@ -33,7 +33,7 @@ José Villamayor
 - Email: guitarse@gmail.com
 
 ## Licencia
-Este proyecto fue creado para la 2da entrega de la clase de Javascript
+Este proyecto fue creado para la 2da entrega de la clase de Javascript. 
 Este programa interactivo en Js permite al usuario obtener: citas filosoficas,recomendaciones de libros, chistes y reseñas de discos al azar
 
 ## Funcionalidades 
