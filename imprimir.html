@@ -7,10 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
-    <!-- Header con fondo -->
+    <!-- Header -->
     <header class="bg-dark text-white text-center py-4 mb-5">
-        <h1 class="display-4">Últimas Frases Seleccionadas</h1>
-        <p class="lead">Tus últimas 4 selecciones</p>
+        <h1 class="display-4">Tu colección personal</h1>
+        <p class="lead">Historial de tus ultimas inspiraciones</p>
     </header>
 
     <audio id="audioPlayer" autoplay>
@@ -21,15 +21,23 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <!-- Card para contener la lista -->
-                <div class="card shadow-sm">
+                <div class="card shadow">
                     <div class="card-body">
-                        <ol id="ultimasFrases" class="list-group list-group-numbered">
-                            <!-- Las frases se agregarán aquí dinámicamente -->
-                        </ol>
+                        <div id="ultimasFrases" class="list-group">
+                            <!-- items -->
+                            <div class="list-group-item list-group-item-action mb-3 rounded border">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary rounded-pill me-2">1</span>
+                                    <small class="text-muted">Categoría</small>
+                                </div>
+                                <p class="mt-2 mb-1 text-dark">Contenido de la selección</p>
+                                <small class="text-muted d-block">Autor/Fuente</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+    
+                
                 <!-- Botón para volver -->
                 <div class="text-center mt-4">
                     <a href="index.html" class="btn btn-primary">

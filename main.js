@@ -332,18 +332,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function guardarFrase(frase) {
-        // Para localStorage
+        
         let frases = JSON.parse(localStorage.getItem("frases")) || [];
         frases.push(frase);
-        while (frases.length > 4) {  // Mantener exactamente 4 elementos
-            frases.shift();          // Eliminar elementos hasta tener 4
+        while (frases.length > 4) {  
+            frases.shift();          
         }
         localStorage.setItem("frases", JSON.stringify(frases));
     
-        // Para la sesión actual
+        // sesion actual
         frasesSesion.push(frase);
-        while (frasesSesion.length > 4) {  // Mantener exactamente 4 elementos
-            frasesSesion.shift();          // Eliminar elementos hasta tener 4
+        while (frasesSesion.length > 4) {  
+            frasesSesion.shift();          
         }
     }
     function reproducirAudio(ruta) {
